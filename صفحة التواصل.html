@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
@@ -40,24 +39,26 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2>صفحة التواصل</h2>
+<h3>صفحة التواصل</h3>
 
 <div class="container">
   <form action="/action_page.php">
-    <label for="fname">الإسم الكامل</label>
-    <input type="text" id="fname" name="firstname" placeholder="الإسم الكامل..">
+    <label for="name">الإسم الكامل</label>
+    <input type="text" id="name" name="name" placeholder="اسمك..">
 
-    <label for="lname">البريد الإلكتروني</label>
-    <input type="text" id="lname" name="البريد الإلكتروني" placeholder="البريد الإلكتروني..">
+    <label for="Email">البريد الإلكتروني</label>
+    <input type="text" id="Email" name="Email" placeholder="بريدك الإلكتروني..">
 
-    <label for="المدينة"</label>
-    <select id="المدينة" name="المدينة">
-      <option value="Elmers">المرس</option>
-      <option value="بولمان">بولمان</option>
-      <option value="صفرو">صفرو</option>
+    <label for="city">المدينة أو الجهة</label>
+    <select id="city" name="city">
+      <option value="المرس">Elmers</option>
+      <option value="بولمان">Boulmane</option>
+      <option value="صفرو">Sefrou</option>
+      <option value="مكناس">Meknes</option>
+      <option value="فاس">Fes</option>
     </select>
 
-    <label for="subject">رسالتك</label>
+    <label for="subject">الرسالة</label>
     <textarea id="subject" name="subject" placeholder="اكتب(ي).." style="height:200px"></textarea>
 
     <input type="submit" value="أرسل">
